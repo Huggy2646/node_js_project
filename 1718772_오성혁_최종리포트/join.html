@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #id{
+            border: 3px solid black;
+            background-color: rgb(178,190,181);
+            color: black;
+            padding: 5px;
+        }
+        #pw{
+            border: 3px solid black;
+            background-color: rgb(178,190,181);
+            color: black;
+            padding: 5px;
+        }
+        #login{
+            border: 3px solid black;
+            background-color: rgb(178,190,181);
+            color: black;
+            padding: 5px;
+            
+        }
+        #join{
+            border: 3px solid black;
+            background-color: rgb(178,190,181);
+            color: black;
+            padding: 5px;
+            position: absolute;
+            top:8px;
+            left:425px;
+        }
+        body {background-color: rgb(178,190,181);}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+</head>
+<body>
+    <form action='/join_check' method="POST">
+        <input type="text" id = "id"name = 'id' pattern="^[a-zA-Z]*$">
+        <input type="password" id = "pw" name = 'pw' pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[~!@#$%^&*()+|=])[A-Za-z\d~!@#$%^&*()+|=]{6,20}$">
+        <button id = "join" type="submit" > 확인</button>
+    </form>
+    
+</body>
+</html>

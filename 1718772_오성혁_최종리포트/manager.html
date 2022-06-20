@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #div1 {
+            width : 300px;
+            height: 130px;
+            border: 3px solid black;
+            background-color: orange;
+        }
+        #div5 {
+            width : 300px;
+            height: 30px;
+            border: 3px solid black;
+        }
+        #div2 {
+            width : 300px;
+            height: 50px;
+            border: 3px solid black;
+        }
+        #div3 {
+            width : 430px;
+            height: 50px;
+            border: 3px solid black;
+        }
+        #management{
+            width:100px;
+            margin:auto;
+            display:block;
+        }
+        #curr_enrol{
+            width:110px;
+            margin:auto;
+            display:block;
+        }
+    </style> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1"style="margin:auto;text-align:center; border:1;">
+    <center><h1>관리자 모드</h1></center>
+    <form action="/manager" method="post"style="display:inline-block;"> <button id="management" name="management_n" value = "management" type='submit'>교과목 관리</button></form>
+    <form action="/manager" method="post"style="display:inline-block;"> <button id="curr_enrol" name="curr_enrol_n" value = "curr_enrol_v"type='submit'>수강 현황 출력</button></form>
+    </div>
+</body>
+</html>
